@@ -48,6 +48,7 @@ type ProtocolTicketTransfer struct {
 	Level         uint64         `json:"level"`
 	Timestamp     time.Time      `json:"timestamp"`
 	Ticket        ProtocolTicket `json:"ticket"`
+	From          Address        `json:"from"`
 	To            Address        `json:"to"`
 	Amount        string         `json:"amount"`
 	TransactionID int64          `json:"transactionId"`
